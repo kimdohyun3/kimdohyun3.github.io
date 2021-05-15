@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
 
 div {
-    font-family: 'Noto Sans KR' , sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 200;
     text-align: center;
 
     width: 100%;
 
-    border: 3px solid royalblue;
-}
+    /* border: 3px solid royalblue; */
+} 
 
 div.navigation {
-    background-color: #303030;
-    height:60px;
+    background-color:#303030;     /* 배경색 */
+    height:60px;                    /* 높이 */
 
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:50px;              /* 왼쪽 여백 */
+    padding-right:50px;             /* 오른쪽 여백 */
 
-    display: flex;
+    display: flex;                  /* 가로 방향으로, contents의 크기만큼 */
     flex-direction: row;
-} 
+}
 
 div.navigation button {
     background-color: #00000000;
@@ -27,29 +27,95 @@ div.navigation button {
 
     color: white;
     height: inherit;
-    width: 120px;
+    width:120px;
     text-align: center;
 }
 
 div.navigation button:hover {
+    /* 마우스 커서를 가져다 댔을 때 변화 */
     background-color: #525252;
-    color: red;
+    color: magenta;
 }
 
-
 div.navigation img {
-    align-items: center;
+    align-self: center;
     height: 40px;
     padding-right: 40px;
 
-    filter: invert(100%) sepia(0%) saturate(18%) 
+    filter: invert(100%) sepia(0%) saturate(18%)
     hue-rotate(314deg) brightness(106%) contrast(104%);
 }
 
-h1 {
-    border: 3px solid royalblue;
+
+
+#book1 {
+    background-color: white;
+}
+#book1 .contents {
+    padding: 20px;
+}
+#book1 .page {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+
+    height: 150px;
+    box-shadow: 2px 1px 5px 0px #AAAAAA;
+}
+#book1 .page .text {
+    height: 120px;
+}
+#book1 .wrapper {
+    max-width: 900px;
+}
+.profile_pic {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+}
+.profile_pic img {
+    width: inherit;
+    height: inherit;
+    border-radius: 70%;
+}
+#book1 .arrow {
+    display: flex;
+    flex-direction: row;
+}
+#book1 .arrow img {
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#book1 .arrow img#left-arrow{
+    transform: scaleX(-1);
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+    align-self: center;
+
+    padding: 80px;
+    margin: 0px auto;
+    max-width: 1200px;
 }
 
-p {
-    border: 3px solid royalblue;
-}
+h1 {
+    font-family: 'Noto Sans KR', sans-serfit;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+    p {
+        text-align: left;
+        margin-bottom: 10px;
+ }
